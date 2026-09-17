@@ -1,4 +1,4 @@
-# Towards Decision-Making from Human Feedback Under the Free Energy Principle
+# Towards Interaction Regulation from Human Feedback via Free Energy Minimization
 
 This repository contains the code and experimental material for a human-in-the-loop control architecture based on **variational free energy minimization**.
 
@@ -45,7 +45,7 @@ The repository also includes video material showing representative experiments, 
 
 If you use this repository, please cite the associated work:
 
-**Towards Decision-Making from Human Feedback Under the Free Energy Principle**
+**[Towards Interaction Regulation from Human Feedback via Free Energy Minimization](https://arxiv.org/abs/2609.18853)**
 
 ## Authors of the manuscript
 
