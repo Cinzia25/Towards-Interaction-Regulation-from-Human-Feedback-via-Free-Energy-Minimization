@@ -41,6 +41,36 @@ For implementation details, dependencies, usage instructions, and package-specif
 
 The repository also includes video material showing representative experiments, including the straight-lane navigation test with time-varying human preferences.
 
+## Experimental parameters
+
+In the following table, we report the parameters used during the experiments and their corrensponding values. 
+
+| Parameter | Value | Description |
+|:---|:---:|:---|
+| **Action space** | | |
+| $v_{\max}$ | 0.25 | Maximum linear velocity |
+| $\omega_{\max}$ | 2.5 | Maximum angular velocity |
+| $v_{\mathrm{ref}}$ | 0.2 | Linear velocity for *Forward* preference |
+| $\omega_{\mathrm{ref}}$ | 2 | Angular velocity for *Left* preference |
+| $M_v$ | 11 | Linear velocity bins |
+| $M_\omega$ | 21 | Angular velocity bins |
+| $M$ | 193 | Feasible actions |
+| **Generative model** | | |
+| $\sigma_v$ | 0.1 / 0.2 | Standard deviation of $q_{k\mid k-1}^{(u)}$ on linear velocity (Straight lane / Full-lap) |
+| $\sigma_\omega$ | 1.5 / 2 | Standard deviation of $q_{k\mid k-1}^{(u)}$ on angular velocity (Straight lane / Full-lap) |
+| **Cost function** | | |
+| $d_{\mathrm{scale}}$ | 0.105 | Lateral deviation scale |
+| $\phi_{\mathrm{scale}}$ | 0.4 | Heading error scale |
+| $\gamma_d$ | 7 | Lateral error weight |
+| $\gamma_\phi$ | 2 | Heading error weight |
+| $\gamma_c$ | 2.5 | Cross-term weight |
+| $\gamma_{\mathrm{barrier}}$ | 20 | Barrier gain |
+| $\beta$ | 10 | Barrier sharpness |
+| $d_{\mathrm{th}}$ | 0.8 | Barrier threshold |
+| **Other models** | | |
+| $\sigma$ | 0.1 | Standard deviation of $p_{k\mid k-1}^{(x)}$ and $q_{k\mid k-1}^{(x)}$ |
+
+
 ## Reference
 
 If you use this repository, please cite the associated work:
